@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleMQ.css">
+        <title>Parallex Effect</title>
+    </head>
+    <body>
+        <div class="content">
+            <nav>
+                <div class="logo">
+                    <img src="images/design-1.png" alt="design-1">
+                    <div class="logo-heading">
+                        <div class="circle"></div>
+                        <h3>logo</h3>
+                    </div>
+                </div>
+                <div class="menu-bar">
+                    <ul>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>service</li>
+                        <li>contact</li>
+                        <li>faq</li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="left">
+                    <div class="heading">
+                        <h1><span>Creative</span> process.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odio omnis perferendis numquam ad dolor nisi et provident modi nesciunt itaque! Ducimus excepturi tempore incidunt ab consequatur, quia corrupti sed.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="joy-stick layer" src="images/joy-stick.png" alt="joy-stick" data-speed="4">
+                    <img class="book layer" src="images/book.png" alt="book" data-speed="3">
+                    <img class="paint-kit layer" src="images/paint-kit.png" alt="paint-kit" data-speed="1">
+                    <img class="earth layer" src="images/earth.png" alt="earth" data-speed="3">
+                    <img class="ball layer" src="images/ball.png" alt="ball" data-speed="2">
+                    <img class="big-ball layer" src="images/big-ball.png" alt="big-ball" data-speed="3">
+                </div>
+            </section>
+            <script type="text/javascript">
+                document.addEventListener("mousemove", parallax);
+                function parallax(e){
+                    this.querySelectorAll('.layer').forEach(layer => {
+                        const speed = layer.getAttribute('data-speed')
+
+                        const x = (window.innerWidth - e.pageX*speed)/100
+                        const y = (window.innerHeight - e.pageY*speed)/100
+
+                        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+                    })
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    font-family: 'Commissioner', sans-serif;
+}
+.content{
+    overflow: hidden;
+    background-image: url(../images/main-image.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100vh;
+    position: relative;
+    background-position: right;
+}
+.content nav{
+    overflow: hidden;
+    
+}
+.content nav .logo{
+    float: left;
+    width: 40%;
+}
+.content nav .logo img{
+    position: absolute;
+    width: 15%;
+    z-index: -1;
+}
+.content nav .logo .logo-heading{
+    display: inline-flex;
+    margin: 60px 20px;
+}
+.content nav .logo .logo-heading .circle{
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-right: 6px;
+    margin-left: 5%;
+}
+.content nav .logo .logo-heading h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0px;
+}
+.content nav .menu-bar{
+    float: right;
+    width: 60%;
+    margin: 30px 0px;
+    text-align: right;
+}
+.content nav .menu-bar ul{
+    padding: 0px;
+    margin: 0px 167px 0px 0px;
+}
+.content nav .menu-bar ul li{
+    margin: 0% 2%;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+}
+.content section{
+    overflow: hidden;
+    height: 100vh;
+}
+/*
+.content section .left{
+    position: absolute;
+    top: 25%;
+    left: 50px;
+    width: 40%;
+    float: left;
+}
+*/
+.content section .left{
+    width: 40%;
+    float: left;
+    position: absolute;
+    top: 25%;
+}
+.content section .left .heading{
+    padding-left: 80px;
+}
+.content section .left .heading h1{
+    color: black;
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.content section .left .heading h1 span{
+    display: block;
+    font-weight: 600;
+    font-size: 85px;
+    margin-bottom: -15px;
+
+}
+.content section .left .heading p{
+    
+}
+.content section .left .heading a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to left, #c82281 0%, #ff5a01 100%);
+}
+.content section .right{
+    
+    
+}
+.content section .right img{
+    position: absolute;
+}
+.content section .right .joy-stick{
+    width: 7%;
+    right: 20%;
+    top: 25%;
+}
+.content section .right .book{
+    width: 10%;
+    right: 8%;
+    top: 25%;
+}
+.content section .right .paint-kit{
+    width: 6%;
+    right: 1%;
+    top: 40%;
+}
+.content section .right .earth{
+    width: 8%;
+    right: 18%;
+    top: 44%;
+}
+.content section .right .ball{
+    width: 4%;
+    right: 7%;
+    top: 50%;
+}
+.content section .right .big-ball{
+    width: 7%;
+    right: 13%;
+    top: 60%;
+}
